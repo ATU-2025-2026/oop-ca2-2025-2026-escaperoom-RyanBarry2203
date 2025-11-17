@@ -1,0 +1,15 @@
+C:\OOP FileHolder\CA2\bin\Debug\net8.0\CA2.exe
+C:\OOP FileHolder\CA2\bin\Debug\net8.0\CA2.deps.json
+C:\OOP FileHolder\CA2\bin\Debug\net8.0\CA2.runtimeconfig.json
+C:\OOP FileHolder\CA2\bin\Debug\net8.0\CA2.dll
+C:\OOP FileHolder\CA2\bin\Debug\net8.0\CA2.pdb
+C:\OOP FileHolder\CA2\obj\Debug\net8.0\CA2.GeneratedMSBuildEditorConfig.editorconfig
+C:\OOP FileHolder\CA2\obj\Debug\net8.0\CA2.AssemblyInfoInputs.cache
+C:\OOP FileHolder\CA2\obj\Debug\net8.0\CA2.AssemblyInfo.cs
+C:\OOP FileHolder\CA2\obj\Debug\net8.0\CA2.csproj.CoreCompileInputs.cache
+C:\OOP FileHolder\CA2\obj\Debug\net8.0\CA2.sourcelink.json
+C:\OOP FileHolder\CA2\obj\Debug\net8.0\CA2.dll
+C:\OOP FileHolder\CA2\obj\Debug\net8.0\refint\CA2.dll
+C:\OOP FileHolder\CA2\obj\Debug\net8.0\CA2.pdb
+C:\OOP FileHolder\CA2\obj\Debug\net8.0\CA2.genruntimeconfig.cache
+C:\OOP FileHolder\CA2\obj\Debug\net8.0\ref\CA2.dll
