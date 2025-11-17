@@ -4,9 +4,19 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            //vashvcjkb
-            //vcjhyewvvejh
+            DrawRoom("bedroom");
+            
         }
+        public void DrawRoom(string name)
+        {
+            switch (name.ToLower())
+            {
+                case "bedroom": DrawBedroom(); break;
+                case "attic": DrawAttic(); break;
+                case "study": DrawStudy(); break;
+                case "kitchen": DrawKitchen(); break;
+            }
+        }
+
     }
 }
