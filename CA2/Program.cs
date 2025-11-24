@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+        //start adding game logic here
         static void Main(string[] args)
         {
             DrawRoom("bedroom");
