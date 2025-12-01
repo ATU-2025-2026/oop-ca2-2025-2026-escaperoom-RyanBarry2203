@@ -1,44 +1,49 @@
 ﻿using System;
 
-public class Room
+namespace CA2
 {
-	public Room()
-	{
-		public string puzzle { get; set; }
-		public string description { get; set; }
-		public string roomName { get; set; }
-	public string gimmic { get; set; }
-	public Room()
-	{
-		// Default constructor
-	}
-	public Room(string puzzle, string description, string roomName, string gimmic)
-	{
-		this.puzzle = puzzle;
-		this.description = description;
-		this.roomName = roomName;
-		this.gimmic = gimmic;
-
-    }
-    public override string ToString()
+    public class Room
     {
-        return
-            "┌───────────────────────────────────────────────┐\n" +
-            $"│ ROOM: {roomName,-40} │\n" +
-            "├───────────────────────────────────────────────┤\n" +
-            $"│ Description:                                   │\n" +
-            $"│   {description,-42} │\n" +
-            "│                                               │\n" +
-            $"│ Puzzle: {puzzle,-37}│\n" +
-            "│                                               │\n" +
-            "├───────────────────────────────────────────────┤\n" +
-            "│ Actions:                                      │\n" +
-            "│   [1] Inspect Room                            │\n" +
-            "│   [2] Solve Puzzle                             │\n" +
-            "│   [3] Check Inventory                          │\n" +
-            "│   [4] Move to Next Room                        │\n" +
-            "└───────────────────────────────────────────────┘\n";
-    }
+        // Properties belong here (inside the class, outside the constructor)
+        public string Puzzle { get; set; }
+        public string Description { get; set; }
+        public string RoomName { get; set; }
+        public string Gimmick { get; set; }
 
-}
+        public Room()
+        {
+            // Initialize default values to avoid null warnings
+            Puzzle = "None";
+            Description = "A generic room.";
+            RoomName = "Unknown";
+            Gimmick = "None";
+        }
+
+        // Virtual method allows subclasses (like Kitchen) to override it
+        public virtual void Draw()
+        {
+            Console.WriteLine($"You are in the {RoomName}.");
+            Console.WriteLine(Description);
+        }
+
+        public override string ToString()
+        {
+            return
+                "┌───────────────────────────────────────────────┐\n" +
+                $"│ ROOM: {RoomName,-40} │\n" +
+                "├───────────────────────────────────────────────┤\n" +
+                $"│ Description:                                  │\n" +
+                $"│   {Description,-42} │\n" +
+                "│                                               │\n" +
+                $"│ Puzzle: {Puzzle,-37}│\n" +
+                "│                                               │\n" +
+                "├───────────────────────────────────────────────┤\n" +
+                "│ Actions:                                      │\n" +
+                "│   [1] Inspect Room                            │\n" +
+                "│   [2] Solve Puzzle                            │\n" +
+                "│   [3] Check Inventory                         │\n" +
+                "│   [4] Move to Next Room                       │\n" +
+                "└───────────────────────────────────────────────┘\n";
+        }
+    }
 }

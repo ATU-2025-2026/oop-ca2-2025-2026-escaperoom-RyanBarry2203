@@ -1,23 +1,28 @@
 ﻿using System;
 
-public class Player
+namespace CA2
 {
-	public Player()
-	{
-		public string currentRoom { get; set; }
-		public string inventory { get; set; }
-		public int health { get; set; }
-		public int sanity { get; set; }
-	public Player()
-		{
-			// Default constructor
-		}
-		public Player(string currentRoom, string inventory, int health, int sanity)
-		{
-			this.currentRoom = currentRoom;
-			this.inventory = inventory;
-			this.health = health;
-			this.sanity = sanity;
+    public class Player
+    {
+        // Properties moved to class level
+        public string CurrentRoom { get; set; }
+        public string Inventory { get; set; }
+        public int Health { get; set; }
+        public int Sanity { get; set; }
+
+        public Player()
+        {
+            // Default constructor
+            Health = 100;
+            Sanity = 100;
+        }
+
+        public Player(string currentRoom, string inventory, int health, int sanity)
+        {
+            this.CurrentRoom = currentRoom;
+            this.Inventory = inventory;
+            this.Health = health;
+            this.Sanity = sanity;
+        }
     }
-}
 }
